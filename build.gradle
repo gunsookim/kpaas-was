@@ -1,14 +1,16 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.0'
-    id 'io.spring.dependency-management' version '1.1.4'
+    // Spring Boot 2.7.x는 Java 8과 호환됩니다.
+    id 'org.springframework.boot' version '2.7.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 group = 'site.kormunity'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    sourceCompatibility = '17'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
 }
 
 configurations {
